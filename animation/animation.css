@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+#dot,
+
+.pageline1,
+.pageline2,
+.pageline3 {
+  position: fixed;
+  width: 0.5px;
+  background-color: grey;
+  z-index: 100;
+}
+.pageline1 {
+  right: 50px;
+  height: 100vh;
+  top: 0;
+}
+.pageline2 {
+  left: 50px;
+  height: 100vh;
+  top: 0;
+}
+.pageline3 {
+  top: 113px;
+  width: 100vw;
+  height: 0.5px;
+}
+
+.menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease; /* Smooth transition for line movement */
+}
+.logo img {
+  mix-blend-mode: screen;
+}
+.planets {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#dot {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+
+#ball {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  z-index: 5;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+.flight-overview {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+  height: 100vh;
+  width: 80vw;
+  background-color: #fff;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50px, 115px);
+}
+.navmenucount{
+    display: none;
+    }
+    .navmenucount.active{
+      display: block;
+    }
+    .navbarmenue{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #dcd9cd;
+      position: fixed;
+      margin: 0;
+      inset: 0;
+      z-index: 999999999999999999;
+    }
+    .navbarmenue{
+    
+      flex-direction: column;
+    }
+    ul {
+      position: relative;
+    }
+    ul li {
+      list-style: none;
+      text-align: center;
+    }
+    ul li a {
+      color: #333;
+      text-decoration: none;
+      font-size: 3em;
+      padding: 5px 20px;
+      display: inline-flex;
+      font-weight: 700;
+      transition: 0.5s;
+    }
+    ul:hover li a {
+      color: #0002;
+    }
+    ul li:hover a {
+      color: #000;
+      background: transparent;
+    }
+    ul li a:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5em;
+      color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 500px;
+      transition: letter-spacing 0.5s, left 0.5s;
+    }
+    ul li a:hover:before {
+      content: attr(data-text);
+      opacity: 1;
+      left: 50%;
+      letter-spacing: 10px;
+      width: 1800px;
+      height: 1800px;
+    }
+
+.flight-heading {
+    font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.massive-heading-right {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 0;
+    margin-right: -10vw;
+    color: #ededef;
+    font-size: 105px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em;
+}
+
+.subheading {
+    margin-top: 10px;
+    letter-spacing: -2px;
+    color: #000;
+    font-size: 34px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.description {
+    position: relative;
+    max-width: 80%;
+    margin-top: 20px;
+    color: rgba(28, 46, 70, .65);
+    font-size: 15px;
+    line-height: 1.7em;
+    -webkit-column-count: 2;
+    column-count: 2;
+
+}
+.content{
+    text-align: left;
+    font-family: "Urbanist", sans-serif;
+}
+
+.ship-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.image-wrapper {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.icon {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-wrapper p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+.background-text {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(200, 200, 200, 0.2);
+  z-index: -1;
+}
+
+
