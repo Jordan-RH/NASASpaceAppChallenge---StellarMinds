@@ -11,17 +11,20 @@
             height: 100vh;
             overflow: hidden;
             background: radial-gradient(ellipse at bottom, #001f3f 0%, #001a33 100%); /* Dark Blue Gradient */
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
             font-family: 'Arial', sans-serif;
             text-align: center;
+            position: relative;
         }
 
         h1 {
             font-size: 48px;
             text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: 20px;  /* Adjust this value to position the text further down if needed */
+            left: 50%;
+            transform: translateX(-50%);  /* Center the text horizontally */
+            margin: 0;
         }
 
         /* Creating animated stars */
