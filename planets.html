@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./animation/style.css" />
+</head>
+
+<body>
+ 
+  <div class="planets">
+    <!-- partial:index.partial.html -->
+
+    <input class="planet9" id="pluto" name="planet" type="radio" />
+    <label class="pluto menu" for="pluto">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Pluto
+        </h2>
+        <h3>Pluto</h3>
+      </div>
+    </label>
+    <input class="planet8" id="neptune" name="planet" type="radio" />
+    <label class="neptune menu" for="neptune">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Neptune
+        </h2>
+        <h3>Neptune</h3>
+      </div>
+    </label>
+    <input class="planet7" id="uranus" name="planet" type="radio" />
+    <label class="uranus menu" for="uranus">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Uranus
+        </h2>
+        <h3>Uranus</h3>
+      </div>
+    </label>
+    <input class="planet6" id="saturn" name="planet" type="radio" />
+    <label class="saturn menu" for="saturn">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Saturn
+        </h2>
+        <h3>Saturn</h3>
+      </div>
+    </label>
+    <input class="planet5" id="jupiter" name="planet" type="radio" />
+    <label class="jupiter menu" for="jupiter">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Jupiter
+        </h2>
+        <h3>Jupiter</h3>
+      </div>
+    </label>
+    <input checked="checked" class="planet4" id="mars" name="planet" type="radio" />
+    <label class="menu mars" for="mars">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Mars
+        </h2>
+        <h3>Mars</h3>
+      </div>
+    </label>
+    <input checked="checked" class="planet3" id="earth" name="planet" type="radio" />
+    <label class="menu earth" for="earth">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Earth
+        </h2>
+        <h3>Earth</h3>
+      </div>
+    </label>
+    <input checked="checked" class="planet2" id="venus" name="planet" type="radio" />
+    <label class="menu venus" for="venus">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Venus
+        </h2>
+        <h3>Venus</h3>
+      </div>
+    </label>
+    <input checked="checked" class="planet1" id="mercury" name="planet" type="radio" />
+    <label class="menu mercury" for="mercury">
+      <div class="preview"></div>
+      <div class="info">
+        <h2>
+          <div class="pip"></div>
+          Mercury
+        </h2>
+        <h3>Mercury</h3>
+      </div>
+    </label>
+    <div class="solar">
+      <div class="solar_systm">
+        <div class="planet mercury">
+          <div class="planet_description mercury">
+            <h2>Planet</h2>
+            <h1>Mercury</h1>
+            <p>
+              The closest planet to the sun. It circles the sun faster than
+              all the other planets, which is why Romans named it after
+              their swift-footed messenger god.
+            </p>
+ 
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet venus">
+          <div class="planet_description venus">
+            <h2>Planet</h2>
+            <h1>Venus</h1>
+            <p>
+              Named for the Roman goddess of love and beauty. In ancient
+              times, Venus was often thought to be two different stars, the
+              evening star and the morning star.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet earth">
+          <div class="moon moon">
+            <h3>Moon</h3>
+            <h2>Moon</h2>
+          </div>
+          <div class="trajectory m"></div>
+          <div class="planet_description earth">
+            <h2>Planet</h2>
+            <h1>Earth</h1>
+            <p>
+              Earth, our home. It is the only planet known to have an
+              atmosphere containing free oxygen, oceans of liquid water on
+              its surface, and, of course, life.
+            </p>
+   
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet mars">
+          <div class="moon deimos">
+            <h3>Moon</h3>
+            <h2>Deimos</h2>
+          </div>
+          <div class="trajectory d"></div>
+          <div class="moon phoebos">
+            <h3>Moon</h3>
+            <h2>Phoebos</h2>
+          </div>
+          <div class="trajectory p"></div>
+          <div class="planet_description mars">
+            <h2>Planet</h2>
+            <h1>Mars</h1>
+            <p>
+              Fourth planet from the Sun and the second smallest planet in
+              the solar systm. Named after the Roman god of war often
+              described as the “Red Planet”.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet jupiter">
+          <div class="moon lo">
+            <h3>Moon</h3>
+            <h2>Io</h2>
+          </div>
+          <div class="moon europa">
+            <h3>Moon</h3>
+            <h2>Europa</h2>
+          </div>
+          <div class="moon ganymede">
+            <h3>Moon</h3>
+            <h2>Ganymede</h2>
+          </div>
+          <div class="trajectory lop"></div>
+          <div class="trajectory eu"></div>
+          <div class="trajectory ga"></div>
+          <div class="planet_description jupiter">
+            <h2>Planet</h2>
+            <h1>Jupiter</h1>
+            <p>
+              Jupiter is the largest planet in the solar systm. Fittingly,
+              it was named after the king of the gods in Roman mythology.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet saturn">
+          <div class="moon titan">
+            <h3>Moon</h3>
+            <h2>Titan</h2>
+          </div>
+
+          <div class="moon enceladus">
+            <h3>Moon</h3>
+            <h2>Enceladus</h2>
+          </div>
+          <div class="trajectory ti"></div>
+          <div class="trajectory di"></div>
+          <div class="trajectory enc"></div>
+          <div class="planet_description saturn">
+            <h2>Planet</h2>
+            <h1>Saturn</h1>
+            <p>
+              Saturn is the sixth planet from the sun and the second largest
+              planet in the solar systm. Saturn was the Roman name for
+              Cronus, the lord of the Titans.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet uranus">
+          <div class="moon miranda">
+            <h3>Moon</h3>
+            <h2>Miranda</h2>
+          </div>
+          <div class="moon ariel">
+            <h3>Moon</h3>
+            <h2>Ariel</h2>
+          </div>
+          <div class="moon umbriel">
+            <h3>Moon</h3>
+            <h2>Umbriel</h2>
+          </div>
+          <div class="trajectory mir"></div>
+          <div class="trajectory ari"></div>
+          <div class="trajectory umb"></div>
+          <div class="planet_description uranus">
+            <h2>Planet</h2>
+            <h1>Uranus</h1>
+            <p>
+              The first planet to be discovered by scientists. The planet is
+              notable for its dramatic tilt, which causes its axis to point
+              nearly directly at the sun.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet neptune">
+          
+          <div class="trajectory tri"></div>
+          <div class="trajectory pro"></div>
+          <div class="trajectory ner"></div>
+          <div class="planet_description neptune">
+            <h2>Planet</h2>
+            <h1>Neptune</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam,
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="solar_systm">
+        <div class="planet pluto">
+          <div class="planet_description pluto">
+            <h2>Dwarf planet</h2>
+            <h1>Pluto</h1>
+            <p>
+              Pluto, once considered the ninth and most distant planet from
+              the sun, is now the largest known dwarf planet in the solar
+              systm.
+            </p>
+
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+    <input class="read" id="readMercury" name="mercuryRead" type="radio" />
+    <label class="closeBig" for="closeMercury"></label>
+    <input class="read" id="closeMercury" name="mercuryRead" type="radio" />
+    <div class="panel">
+      <!-- mercury-->
+
+
+      <div class="text-panel">
+        <p>Surface and Craters: Mercury's surface is heavily cratered, similar to the Moon's, due to numerous impacts from asteroids and comets. This is a result of its lack of atmosphere to protect it from space debris.
+        </p>
+        <p>Orbit and Rotation: Mercury orbits the Sun very quickly, completing one revolution in just 88 Earth days. Its orbit is also highly elliptical, meaning that its distance from the Sun varies significantly throughout its orbit.</p>
+      </div>
+
+      <div class="container">
+        <div id="Marsplanet"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">Core and Magnetic Field: Mercury has a large iron core relative to its size, which gives it a relatively high density. The planet's magnetic field is weak compared to Earth's but is still strong enough to deflect the solar wind.</p>
+        <p class="border-botttom2">Size and Proximity to the Sun: Mercury is the smallest planet in the solar system and the closest to the Sun. It has no atmosphere and experiences extreme temperature variations, from scorching hot during the day to freezing cold at night</p>
+      </div>
+    </div>
+    <input class="read" id="readVenus" name="venusRead" type="radio" />
+    <label class="closeBig" for="closeVenus"></label>
+    <input class="read" id="closeVenus" name="venusRead" type="radio" />
+    <div class="panel">
+      <!-- venus -->
+
+
+      <div class="text-panel">
+        <p>Earth's Twin: Venus is often called Earth's twin due to its similar size and composition. However, Venus has a thick atmosphere composed mostly of carbon dioxide, which traps heat and creates a runaway greenhouse effect.
+        </p>
+        <p>Atmosphere and Greenhouse Effect: Venus's thick atmosphere traps heat, making it the hottest planet in the solar system. The high temperatures and pressures on the surface make it a hostile environment for life as we know it.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="venusplant"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">Surface and Volcanoes: Venus's surface is covered in volcanoes, mountains, and vast plains of lava. This indicates significant geological activity in the past and present.</p>
+        <p class="border-botttom2">Retrograde Rotation: Venus rotates very slowly and in the opposite direction of most planets, a phenomenon known as retrograde rotation.
+        </p>
+      </div>
+    </div>
+    <input class="read" id="readEarth" name="earthRead" type="radio" />
+    <label class="closeBig" for="closeEarth"></label>
+    <input class="read" id="closeEarth" name="earthRead" type="radio" />
+    <div class="panel">
+      <!-- earth-->
+
+
+      <div class="text-panel">
+        <p>The Blue Planet: Earth is the only planet known to support life. It has a liquid water ocean, a diverse atmosphere, and a strong magnetic field.
+        </p>
+        <p>Plate Tectonics: Earth's surface is divided into tectonic plates that are constantly moving, causing earthquakes, volcanoes, and the formation of mountains.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="earthplanet"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">The Moon: Earth's Moon plays a significant role in stabilizing the planet's tilt and moderating its climate.
+        </p>
+        <p class="border-botttom2">Life: Earth is home to millions of species of living organisms, from bacteria to humans.
+        </p>
+      </div>
+    </div>
+    <input class="read" id="readMars" name="marsRead" type="radio" />
+    <label class="closeBig" for="closeMars"></label>
+    <input class="read" id="closeMars" name="marsRead" type="radio" />
+    <div class="panel">
+      <!-- Mars -->
+
+
+      <div class="text-panel">
+        <p>The Red Planet: Mars is often called the Red Planet due to the iron oxide on its surface, which gives it a reddish appearance.</p>
+        <p>Search for Life: Mars is one of the most studied planets in our solar system, as scientists believe that liquid water once flowed on its surface, increasing the possibility of past or present microbial life.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="Marsplanet"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">Surface and Climate: Mars' surface is characterized by vast plains, towering volcanoes, and deep canyons. The climate is cold and dry, with polar ice caps composed of both water ice and frozen carbon dioxide.
+        </p>
+        <p class="border-botttom2">Moons: Mars has two small moons, Phobos and Deimos.
+        </p>
+      </div>
+    </div>
+    <input class="read" id="readJupiter" name="jupiterRead" type="radio" />
+    <label class="closeBig" for="closeJupiter"></label>
+    <input class="read" id="closeJupiter" name="jupiterRead" type="radio" />
+    <div class="panel">
+      <!-- Jupitor-->
+
+
+      <div class="text-panel">
+        <p>Gas Giant: Jupiter is the largest planet in the solar system and a gas giant composed primarily of hydrogen and helium.
+        </p>
+        <p>Great Red Spot: Jupiter is famous for its Great Red Spot, a giant storm that has been raging for centuries.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="Jupiterplanet"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">Moons: Jupiter has numerous moons, including the four largest, known as the Galilean moons: Io, Europa, Ganymede, and Callisto.
+        </p>
+        <p class="border-botttom2">Magnetic Field: Jupiter has a strong magnetic field, much stronger than Earth's.
+        </p>
+      </div>
+    </div>
+    <input class="read" id="readSaturn" name="saturnRead" type="radio" />
+    <label class="closeBig" for="closeSaturn"></label>
+    <input class="read" id="closeSaturn" name="saturnRead" type="radio" />
+    <div class="panel">
+      <!-- Saturn -->
+
+
+      <div class="text-panel">
+        <p>Rings: Saturn is most famous for its beautiful rings, which are composed of ice and rock particles.
+          Gas Giant: Saturn is also a gas giant, composed mostly of hydrogen and helium.</p>
+        <p>Moons: Saturn has many moons, including Titan, the second-largest moon in the solar system and the only moon known to have a thick atmosphere.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="Saturnplanet"></div>
+      </div>
+
+      <div class="text-panel2">
+        <p class="border-bottom">Interior: Saturn's interior is thought to consist of a rocky core surrounded by layers of metallic hydrogen and liquid hydrogen.
+        </p>
+        <p class="border-botttom2">Gas Giant: Saturn is also a gas giant, composed mostly of hydrogen and helium.
+        </p>
+      </div>
+    </div>
+    <input class="read" id="readUranus" name="uranusRead" type="radio" />
+    <label class="closeBig" for="closeUranus"></label>
+    <input class="read" id="closeUranus" name="uranusRead" type="radio" />
+      <div class="panel">
+        <!-- Uranus-->
+
+
+        <div class="text-panel">
+          <p>Rings and Moons: Uranus has a system of rings and numerous moons.
+          </p>
+          <p>Magnetic Field: Uranus has a strange magnetic field, as it is tilted at a significant angle relative to the planet's axis of rotation.
+          </p>
+        </div>
+
+        <div class="container">
+          <div id="Uranussplanet"></div>
+        </div>
+
+        <div class="text-panel2">
+          <p class="border-bottom">Tilted Rotation: Uranus is unique because it rotates on its side, giving it a tilted axis.
+          </p>
+          <p class="border-botttom2">Ice Giant: Uranus is an ice giant, meaning it contains large amounts of water, methane, and ammonia in addition to hydrogen and helium.
+          </p>
+        </div>
+      </div>
+      <input class="read" id="readNeptune" name="neptuneRead" type="radio" />
+      <label class="closeBig" for="closeNeptune"></label>
+      <input class="read" id="closeNeptune" name="neptuneRead" type="radio" />
+    
+        <div class="panel">
+          <!-- Neptune -->
+
+
+          <div class="text-panel">
+            <p>Farthest Planet: Neptune is the farthest planet from the Sun and a gas giant composed mostly of hydrogen, helium, and methane.
+            </p>
+            <p>Strong Winds: Neptune has the strongest winds in the solar system.
+            </p>
+          </div>
+
+          <div class="container">
+            <div id="Neptuneplanet"></div>
+          </div>
+
+          <div class="text-panel2">
+            <p class="border-bottom">Great Dark Spot: Neptune has a large storm known as the Great Dark Spot, similar to Jupiter's Great Red Spot.
+            </p>
+            <p class="border-botttom2">Moons: Neptune has several moons, including Triton, its largest moon and a geologically active world.</p>
+          </div>
+        </div>
+        <input class="read" id="readPluto" name="plutoRead" type="radio" />
+        <label class="closeBig" for="closePluto"></label>
+        <input class="read" id="closePluto" name="plutoRead" type="radio" />
+       
+          <div class="panel">
+            <!-- Pluto -->
+
+
+            <div class="text-panel">
+              <p>Once considered the ninth planet in our solar system, Pluto has had a fascinating journey through the annals of astronomy. Discovered in 1930 by Clyde Tombaugh, Pluto held its planetary status for decades.
+              </p>
+       
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
