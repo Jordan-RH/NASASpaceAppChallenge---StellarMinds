@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    background: url("./assets/stardust.png") black; 
+    background: url("./assets/stardust.png") black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@ body {
 
 #title {
     text-align: center;
+    top: +31px;
 }
 
 h1 {
@@ -25,6 +26,27 @@ h1 {
     transform: translateX(-50%);  /* Center the text horizontally */
     margin: 0;
 }
+
+#legend {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 100;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+#legend h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
 
 #infoBox {
     position: absolute;
@@ -43,6 +65,19 @@ h1 {
     flex-direction: column; /* Arrange children in a column */
     overflow-y: scroll; /* Enable vertical scrolling */
 }
+
+#logoButton {
+    position: absolute;
+    top: -25px;
+    left: calc(50% + 175px); /* Adjust this to account for the larger size */
+    transform: translateX(-50%);
+    width: 150px;  /* 1.5 times bigger */
+    height: 150px; /* 1.5 times bigger */
+    cursor: pointer;
+    z-index: 100;
+}
+
+
 
 /* Scrollbar styling for WebKit-based browsers (Chrome, Safari) */
 #infoBox::-webkit-scrollbar {
@@ -85,3 +120,68 @@ h1 {
 #infoBox .details {
     margin-top: 10px; /* Space above details section */
 }
+
+#chatbot {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    color: white;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+#userInput {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    margin-bottom: 10px;
+        text-align: left; 
+}
+
+#sendMessage {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendMessage:hover {
+    background-color: #45a049;
+}
+
+#chatOutput {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    text-align: left; 
+}
+/* Scrollbar styling for WebKit-based browsers (Chrome, Safari) */
+#chatOutput::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatOutput::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chatOutput::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    height: 50px;
+}
+
+/* Scrollbar styling for Firefox */
+#chatOutput {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
+}
+
+

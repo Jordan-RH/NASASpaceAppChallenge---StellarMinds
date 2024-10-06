@@ -7,10 +7,28 @@
     <link rel="stylesheet" href="Infinite.css">
 </head>
 <body>
-    <h1 id="title">Stellar Minds</h1>
+    <div id="header">
+        <h1 id="title">StellarMinds</h1>
+        <img id="logoButton" src="assets/StellarMindsLogo.png" alt="StellarMinds Logo" title="Toggle Chatbot">
+    </div>
     <div id="infoBox"></div>
     <canvas id="orrery"></canvas>
+
+    <div id="legend">
+        <h2>Legend</h2>
+        <label><input type="checkbox" id="showSun" checked> Sun</label><br>
+        <label><input type="checkbox" id="showPlanets" checked> Planets</label><br>
+        <label><input type="checkbox" id="showMoons" checked> Moons</label><br>
+        <label><input type="checkbox" id="showAsteroids" checked> Asteroids / NEOs / PHAs / NECs</label><br>
+    </div>
     
+    <!-- Chatbot Section -->
+    <div id="chatbot">
+        <textarea id="userInput" placeholder="Ask about the solar system..."></textarea>
+        <button id="sendMessage">Send</button>
+        <div id="chatOutput"></div>
+    </div>
+
     <script src="Infinite.js"></script>
 </body>
 </html>
