@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: url("./assets/stardust.png") black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 20px;  /* Adjust this value to position the text further down if needed */
+    left: 50%;
+    transform: translateX(-50%);  /* Center the text horizontally */
+    margin: 0;
+}
+
+#infoBox {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px; /* Allow height to adjust based on content */
+    text-align: left;
+    font-size: 15px;
+    display: none; /* then flex */
+    flex-direction: column; /* Arrange children in a column */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Scrollbar styling for WebKit-based browsers (Chrome, Safari) */
+#infoBox::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+#infoBox::-webkit-scrollbar-track {
+    background: transparent; /* Make the track background transparent */
+}
+
+#infoBox::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7); /* Change thumb color to white with transparency */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    height: 50px; /* Fixed height of the scrollbar thumb */
+}
+
+/* Scrollbar styling for Firefox */
+#infoBox {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: rgba(255, 255, 255, 0.7) transparent; /* Thumb color and track color */
+}
+
+#infoBox .header {
+    display: flex; /* Use flexbox for header layout */
+    justify-content: space-between; /* Space between title and image */
+    align-items: center; /* Center the title and image vertically */
+}
+
+#infoBox #title {
+    font-size: 18px;
+    margin: 0; /* Remove default margin */
+}
+
+#infoBox #image {
+    width: 30px; /* Adjust image size */
+    height: 30px;
+    margin-left: 5px; /* Space between title and image */
+}
+
+#infoBox .details {
+    margin-top: 10px; /* Space above details section */
+}
