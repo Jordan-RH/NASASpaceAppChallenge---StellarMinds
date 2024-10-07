@@ -1,6 +1,6 @@
 const canvas = document.getElementById('orrery');
 const context = canvas.getContext('2d');
-const apiKey = 'placeholderkey'
+const apiKey = 'placeholderazurekeyvault';
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -172,7 +172,7 @@ const asteroids = [
     {
         name: "Asteroid",
         type: "PHA",
-        radius: 15,
+        radius: 0,
         distance: 105,
         speed: 100,
         angle: 0,
@@ -207,7 +207,8 @@ function drawMoon(planet, moon) {
     context.drawImage(moonImg, moonX - moon.radius * zoomLevel, moonY - moon.radius * zoomLevel, moon.radius * 2 * zoomLevel, moon.radius * 2 * zoomLevel);
     context.closePath();
 
-    moon.angle -= moon.speed * 1000 / 86400 / 100; 
+    moon.angle += moon.speed * 1000 / 86400 / 100;  // This line will rotate moons counterclockwise
+
 }
 
 
@@ -231,7 +232,8 @@ function drawCelestialBody(body) {
     context.closePath();
     
     // Update the angle based on the planet's speed
-    body.angle += body.speed * 1000 / 86400 / 100;
+    body.angle -= body.speed * 1000 / 86400 / 100;
+
 
 }
 
@@ -451,7 +453,7 @@ chatOutput.scrollTop = chatOutput.scrollHeight;
 let showSun = true;
 let showPlanets = true;
 let showMoons = true;
-let showAsteroids = true;
+let showAsteroids = false;
 
 document.getElementById('showSun').addEventListener('change', (event) => {
     showSun = event.target.checked;
