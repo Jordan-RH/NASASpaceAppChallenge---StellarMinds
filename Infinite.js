@@ -1,6 +1,6 @@
 const canvas = document.getElementById('orrery');
 const context = canvas.getContext('2d');
-const apiKey = 'sk-ZhMZPmpcY5epNnhBQLxlYkve9oUtrIdmmizds1LuQWT3BlbkFJ5510Iwpg29XD-sOwcDvrsb82Yd1jxUuwdvpuxw9UcA'; // Replace with your actual OpenAI API key
+const apiKey = 'placeholderkey'
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
